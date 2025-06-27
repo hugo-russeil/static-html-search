@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search in Documentation</title>
+  <script src="search_index.js"></script>
+  <script src="search.js" defer></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+
+    #searchBox {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 1em;
+    }
+
+    #results a {
+      display: block;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    #results a:hover {
+      background-color: #f0f0f0;
+    }
+
+    #results strong {
+      font-size: 1.1em;
+    }
+
+    mark {
+      background-color: #ffe066;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Search</h1>
+  <input type="text" id="searchBox" placeholder="Enter a keyword..." />
+  <div id="results"></div>
+
+</body>
+</html>
